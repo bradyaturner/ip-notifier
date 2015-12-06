@@ -10,7 +10,7 @@ CONFIG_FILE = ENV['HOME'] + "/.ipnotifierconfig"
 class IPNotifier
   def initialize
     @logger = Logger.new(STDERR)
-    @logger.level = Logger::DEBUG
+    @logger.level = Logger::INFO
 
     load_config
   end
